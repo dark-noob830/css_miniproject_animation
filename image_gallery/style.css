@@ -1,0 +1,22 @@
+.gallery{
+    display: flex;
+    justify-content: space-around;
+}
+
+.image {
+    background-color: #e5e5e5;
+    /* display: inline-block; */
+    padding: 10px;
+    box-shadow: 4px 4px 8px -4px rgba(0, 0, 0, 0.7);
+}
+
+.image img {
+    object-fit: cover;
+}
+
+.caption {
+    text-align: center;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
