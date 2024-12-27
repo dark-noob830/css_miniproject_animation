@@ -1,6 +1,7 @@
 .gallery{
     display: flex;
     justify-content: space-around;
+    margin-top: 50px;
 }
 
 .image {
@@ -19,4 +20,32 @@
     font-size: 15px;
     font-family: sans-serif;
     font-weight: bold;
+}
+
+.image:nth-child(even){
+    transform: rotate(10deg);
+}
+
+.image:nth-child(even)::before{
+    content: '';
+    display: block;
+    background-color: #a3b18a;
+    width: 100px;
+    height: 25px;
+    transform: translate(-30px,-12px) rotate(-25deg) ;
+    
+}
+
+.image:nth-child(odd){
+    transform: rotate(-10deg);
+}
+
+.image:nth-child(odd)::before{
+    content: '';
+    display: block;
+    background-color: #a3b18a;
+    width: 100px;
+    height: 25px;
+    transform:  translate(190px, -5px) rotate(25deg);
+    
 }
