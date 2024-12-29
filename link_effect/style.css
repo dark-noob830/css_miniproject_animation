@@ -1,75 +1,166 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #eee;
-    font-family: sans-serif;
+  background-color: #eee;
+  font-family: sans-serif;
 }
 
 .wrapper {
-    display: flex;
-    justify-content: space-around;
-    margin: 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem 0;
+  justify-content: center;
+  justify-items: center;
+  margin: 5rem;
 }
 
 .link {
-    text-decoration: none;
-    color: black;
-    position: relative;
-    padding: 9px 0;
+  text-decoration: none;
+  color: black;
+  position: relative;
+  padding: 9px 0;
 }
 
 /************************************************/
 .one .link::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 5px;
-    background-color: #457b9d;
-    border-radius: 5px;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #457b9d;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .one .link:hover::after {
-    opacity: 1;
+  opacity: 1;
 }
 
 /************************************************/
 .two .link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 5px;
+  background-color: #457b9d;
+  border-radius: 5px;
+  transition: width 0.5s ease-in-out;
+}
+
+.two .link:hover::after {
+  width: 100%;
+}
+
+/************************************************/
+.three .link::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 5px;
+  background-color: #457b9d;
+  border-radius: 5px;
+  transition: width 0.5s ease-in-out;
+}
+
+.three .link:hover::after {
+  width: 100%;
+}
+
+/************************************************/
+.four .link::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #ffbe0b;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transition: transform 0.5s ease-in-out;
+}
+
+.four .link:hover::after {
+  transform: scaleX(1);
+}
+
+/************************************************/
+.five .link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 5px;
+  background-color: #ffbe0b;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  transition: width 0.5s ease-in-out;
+}
+
+.five .link:hover::before {
+  width: 50%;
+}
+
+.five .link::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 5px;
+  background-color: #ffbe0b;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  transition: width 0.5s ease-in-out;
+}
+
+.five .link:hover::after {
+  width: 50%;
+}
+
+/************************************************/
+.six .link::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 5px;
+    background-color: #ffbe0b;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    transition: width 0.5s ease-in-out;
+  }
+  
+  .six .link:hover::before {
+    width: 100%;
+  }
+  
+  .six .link::after {
     content: "";
     position: absolute;
     left: 0;
     bottom: 0;
     width: 0;
     height: 5px;
-    background-color: #457b9d;
-    border-radius: 5px;
+    background-color: #ffbe0b;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
     transition: width 0.5s ease-in-out;
-}
-
-.two .link:hover::after {
+  }
+  
+  .six .link:hover::after {
     width: 100%;
-}
-
-/************************************************/
-.three .link::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 0;
-    height: 5px;
-    background-color: #457b9d;
-    border-radius: 5px;
-    transition: width 0.5s ease-in-out;
-}
-
-.three .link:hover::after {
-    width: 100%;
-}
+  }
