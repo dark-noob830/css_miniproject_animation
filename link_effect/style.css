@@ -132,141 +132,226 @@ body {
 
 /************************************************/
 .six .link::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 0;
-    height: 5px;
-    background-color: #ffbe0b;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    transition: width 0.5s ease-in-out;
-  }
-  
-  .six .link:hover::before {
-    width: 100%;
-  }
-  
-  .six .link::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    height: 5px;
-    background-color: #ffbe0b;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    transition: width 0.5s ease-in-out;
-  }
-  
-  .six .link:hover::after {
-    width: 100%;
-  }
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 5px;
+  background-color: #ffbe0b;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  transition: width 0.5s ease-in-out;
+}
 
-  
+.six .link:hover::before {
+  width: 100%;
+}
+
+.six .link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 5px;
+  background-color: #ffbe0b;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  transition: width 0.5s ease-in-out;
+}
+
+.six .link:hover::after {
+  width: 100%;
+}
+
 /************************************************/
 .seven .link::before {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 0;
-    height: 5px;
-    background-color: #344e41;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    transition: width 0.5s ease-in-out;
-  }
-  
-  .seven .link:hover::before {
-    width: 100%;
-  }
-  
-  .seven .link::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 0;
-    height: 5px;
-    background-color: #344e41;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    transition: width 0.5s ease-in-out;
-  }
-  
-  .seven .link:hover::after {
-    width: 100%;
-  }
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 0;
+  height: 5px;
+  background-color: #344e41;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  transition: width 0.5s ease-in-out;
+}
 
-  /************************************************/
+.seven .link:hover::before {
+  width: 100%;
+}
+
+.seven .link::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 5px;
+  background-color: #344e41;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  transition: width 0.5s ease-in-out;
+}
+
+.seven .link:hover::after {
+  width: 100%;
+}
+
+/************************************************/
 .eight .link::before {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 0;
-    height: 5px;
-    background-color: #344e41;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    transition: width 0.5s ease-in-out;
-  }
-  
-  .eight .link:hover::before {
-    width: 100%;
-  }
-  
-  .eight .link::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    height: 5px;
-    background-color: #344e41;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    transition: width 0.5s ease-in-out;
-  }
-  
-  .eight .link:hover::after {
-    width: 100%;
-  }
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 0;
+  height: 5px;
+  background-color: #344e41;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  transition: width 0.5s ease-in-out;
+}
 
-    /************************************************/
+.eight .link:hover::before {
+  width: 100%;
+}
+
+.eight .link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 5px;
+  background-color: #344e41;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  transition: width 0.5s ease-in-out;
+}
+
+.eight .link:hover::after {
+  width: 100%;
+}
+
+/************************************************/
 .nine .link::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 0;
-    height: 5px;
-    background-color: #344e41;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    transition: width 0.5s ease-in-out;
-  }
-  
-  .nine .link:hover::before {
-    width: 100%;
-  }
-  
-  .nine .link::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 0;
-    height: 5px;
-    background-color: #344e41;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    transition: width 0.5s ease-in-out;
-  }
-  
-  .nine .link:hover::after {
-    width: 100%;
-  }
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 5px;
+  background-color: #344e41;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  transition: width 0.5s ease-in-out;
+}
+
+.nine .link:hover::before {
+  width: 100%;
+}
+
+.nine .link::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 5px;
+  background-color: #344e41;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  transition: width 0.5s ease-in-out;
+}
+
+.nine .link:hover::after {
+  width: 100%;
+}
+/************************************************/
+.ten .link {
+  padding: 0;
+  display: inline-block;
+  overflow: hidden;
+}
+.ten .link::after {
+  content: attr(data-swip-text);
+  position: absolute;
+  left: 0;
+  bottom: -100%;
+  transition: bottom 0.3s ease-in-out;
+}
+.ten .link:hover::after {
+  bottom: 0;
+}
+.initial-text-v {
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
+}
+.ten .link:hover .initial-text-v {
+  transform: translateY(-100%);
+}
+
+/************************************************/
+.eleven .link {
+  padding: 0;
+  display: inline-block;
+  overflow: hidden;
+}
+.eleven .link::after {
+  content: attr(data-swip-text);
+  position: absolute;
+  left: -100%;
+  top: 0;
+  transition: left 0.3s ease-in-out;
+}
+.eleven .link:hover::after {
+  left: 0;
+}
+.initial-text-h {
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
+}
+.eleven .link:hover .initial-text-h {
+  transform: translateX(100%);
+}
+
+/************************************************/
+.twelve .link::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 5px;
+  left: -10%;
+  top: 50%;
+  border-radius: 5px;
+  background-color: #fb5607;
+  transform: rotate(90deg);
+  transition: all 0.5s;
+}
+.twelve .link:hover::before {
+  left: 50%;
+  top: 0;
+  width: 80px;
+  transform: translate(-50%, -50%);
+}
+
+.twelve .link::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 5px;
+  left: 100%;
+  top: 50%;
+  border-radius: 5px;
+  background-color: #fb5607;
+  transform: rotate(90deg);
+  transition: all 0.5s;
+}
+.twelve .link:hover::after {
+  left: 50%;
+  top: 100%;
+  width: 80px;
+  transform: translate(-50%, -50%);
+}
