@@ -283,3 +283,67 @@ button {
   width: calc(100% - 3px);
   height: calc(100% - 3px);
 }
+
+/**************************************/
+.accept{
+  background-color: #57cc99;
+  color: white;
+  border-radius: 5px;
+  grid-column: 2/3;
+  overflow: hidden;
+}
+
+.bi-check{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: -100%;
+  transition: all 0.3s ease-in-out;
+}
+.accept:hover .bi-check{
+  bottom: 0;
+}
+.accept .action{
+  display: block;
+  transition: all 0.3s ease-in-out;
+}
+.accept:hover .action{
+  transform: translateY(-200%);
+}
+
+/**************************************/
+.delete{
+  background-color: #ed476f;
+  color: white;
+  border-radius: 5px;
+  grid-column: 3/4;
+  overflow: hidden;
+}
+
+.bi-x{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 100%;
+  transition: all 0.3s ease-in-out;
+}
+.delete:hover .bi-x{
+  bottom: 0;
+}
+.delete .action{
+  display: block;
+  transition: all 0.3s ease-in-out;
+}
+.delete:hover .action{
+  transform: translateY(200%);
+}
