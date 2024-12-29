@@ -347,3 +347,119 @@ button {
 .delete:hover .action{
   transform: translateY(200%);
 }
+
+/**************************************/
+.circle-1{
+  grid-column: 1/2 ;
+  overflow: hidden;
+}
+.circle-1::before{
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  background-color: #6a4c93;
+  border-radius: 50%;
+  transform: translate(calc(-50% - 20px),calc(-50% - 15px));
+  transition: all .3s ease-in-out;
+}
+.circle-1:hover::before{
+  width: 450px;
+  height: 450px;
+}
+.circle-1 span{
+  position: relative;
+  z-index: 2;
+  transition: color .3s ease-in-out;
+}
+.circle-1:hover span{
+  color: white;
+}
+
+/**************************************/
+.circle-2{
+  overflow: hidden;
+}
+.circle-2::before{
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  background-color: #6a4c93;
+  border-radius: 50%;
+  right: 0;
+  bottom: 0;
+  transform: translate(50%,50%);
+  transition: all .3s ease-in-out;
+}
+.circle-2:hover::before{
+  width: 450px;
+  height: 450px;
+}
+.circle-2 span{
+  position: relative;
+  z-index: 2;
+  transition: color .3s ease-in-out;
+}
+.circle-2:hover span{
+  color: white;
+}
+
+
+/**************************************/
+.circle-3{
+  overflow: hidden;
+}
+.circle-3::before{
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  background-color: #6a4c93;
+  border-radius: 50%;
+  right: 50%;
+  bottom: 0;
+  transform: translate(50%,50%);
+  transition: all .3s ease-in-out;
+}
+.circle-3:hover::before{
+  width: 450px;
+  height: 450px;
+}
+.circle-3 span{
+  position: relative;
+  z-index: 2;
+  transition: color .3s ease-in-out;
+}
+.circle-3:hover span{
+  color: white;
+}
+
+/**************************************/
+.circle-4{
+  overflow: hidden;
+}
+.circle-4::before{
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  background-color: #6a4c93;
+  border-radius: 50%;
+  right: 50%;
+  top: 0;
+  transform: translate(50%,-50%);
+  transition: all .3s ease-in-out;
+}
+.circle-4:hover::before{
+  width: 450px;
+  height: 450px;
+}
+.circle-4 span{
+  position: relative;
+  z-index: 2;
+  transition: color .3s ease-in-out;
+}
+.circle-4:hover span{
+  color: white;
+}
