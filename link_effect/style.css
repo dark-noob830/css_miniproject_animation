@@ -164,3 +164,109 @@ body {
   .six .link:hover::after {
     width: 100%;
   }
+
+  
+/************************************************/
+.seven .link::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 5px;
+    background-color: #344e41;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    transition: width 0.5s ease-in-out;
+  }
+  
+  .seven .link:hover::before {
+    width: 100%;
+  }
+  
+  .seven .link::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 5px;
+    background-color: #344e41;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: width 0.5s ease-in-out;
+  }
+  
+  .seven .link:hover::after {
+    width: 100%;
+  }
+
+  /************************************************/
+.eight .link::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 5px;
+    background-color: #344e41;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    transition: width 0.5s ease-in-out;
+  }
+  
+  .eight .link:hover::before {
+    width: 100%;
+  }
+  
+  .eight .link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 5px;
+    background-color: #344e41;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: width 0.5s ease-in-out;
+  }
+  
+  .eight .link:hover::after {
+    width: 100%;
+  }
+
+    /************************************************/
+.nine .link::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 5px;
+    background-color: #344e41;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    transition: width 0.5s ease-in-out;
+  }
+  
+  .nine .link:hover::before {
+    width: 100%;
+  }
+  
+  .nine .link::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 5px;
+    background-color: #344e41;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: width 0.5s ease-in-out;
+  }
+  
+  .nine .link:hover::after {
+    width: 100%;
+  }
