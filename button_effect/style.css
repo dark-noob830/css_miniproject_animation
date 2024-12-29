@@ -39,7 +39,7 @@ button {
 }
 
 /**************************************/
-.left{
+.left {
   overflow: hidden;
 }
 .left::before {
@@ -51,7 +51,6 @@ button {
   top: 0;
   left: -100%;
   transition: left 0.3s ease-in-out;
-
 }
 .left:hover::before {
   left: 0;
@@ -66,7 +65,7 @@ button {
 }
 
 /**************************************/
-.right{
+.right {
   overflow: hidden;
 }
 .right::before {
@@ -78,7 +77,6 @@ button {
   top: 0;
   right: -100%;
   transition: right 0.3s ease-in-out;
-
 }
 .right:hover::before {
   right: 0;
@@ -90,4 +88,198 @@ button {
 }
 .right:hover span {
   color: white;
+}
+
+/**************************************/
+.bottom {
+  overflow: hidden;
+}
+.bottom::before {
+  content: "";
+  position: absolute;
+  background-color: #fb8500;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  bottom: -100%;
+  transition: bottom 0.3s ease-in-out;
+}
+.bottom:hover::before {
+  bottom: 0;
+}
+.bottom span {
+  position: relative;
+  z-index: 2;
+  transition: color 0.3s ease-in-out;
+}
+.bottom:hover span {
+  color: white;
+}
+
+/**************************************/
+.top {
+  overflow: hidden;
+}
+.top::before {
+  content: "";
+  position: absolute;
+  background-color: #fb8500;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  top: -100%;
+  transition: top 0.3s ease-in-out;
+}
+.top:hover::before {
+  top: 0;
+}
+.top span {
+  position: relative;
+  z-index: 2;
+  transition: color 0.3s ease-in-out;
+}
+.top:hover span {
+  color: white;
+}
+
+/**************************************/
+.vertical {
+  overflow: hidden;
+}
+.vertical::before {
+  content: "";
+  position: absolute;
+  background-color: #fb8500;
+  width: 51%;
+  height: 100%;
+  right: 0;
+  top: -100%;
+  transition: top 0.3s ease-in-out;
+}
+.vertical::after {
+  content: "";
+  position: absolute;
+  background-color: #fb8500;
+  width: 50%;
+  height: 100%;
+  left: 0;
+  top: 100%;
+  transition: top 0.3s ease-in-out;
+}
+.vertical:hover::before,
+.vertical:hover::after {
+  top: 0;
+}
+.vertical span {
+  position: relative;
+  z-index: 2;
+  transition: color 0.3s ease-in-out;
+}
+.vertical:hover span {
+  color: white;
+}
+
+/**************************************/
+.horizontal {
+  overflow: hidden;
+}
+.horizontal::before {
+  content: "";
+  position: absolute;
+  background-color: #fb8500;
+  width: 100%;
+  height: 50%;
+  right: 100%;
+  top: 0;
+  transition: right 0.3s ease-in-out;
+}
+.horizontal::after {
+  content: "";
+  position: absolute;
+  background-color: #fb8500;
+  width: 100%;
+  height: 50%;
+  right: -100%;
+  bottom: 0;
+  transition: right 0.3s ease-in-out;
+}
+.horizontal:hover::before,
+.horizontal:hover::after {
+  right: 0;
+}
+.horizontal span {
+  position: relative;
+  z-index: 2;
+  transition: color 0.3s ease-in-out;
+}
+.horizontal:hover span {
+  color: white;
+}
+
+/**************************************/
+.ltrb{
+  grid-column:1 / 3;
+}
+.ltrb::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top: 3px solid #3a5a40;
+  border-left: 3px solid #3a5a40;
+  width: 30px;
+  height: 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+.ltrb::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-bottom: 3px solid #3a5a40;
+  border-right: 3px solid #3a5a40;
+  width: 30px;
+  height: 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+.ltrb:hover::after,
+.ltrb:hover::before {
+  width: calc(100% - 3px);
+  height: calc(100% - 3px);
+}
+
+/**************************************/
+.rtlb{
+  grid-column:3 / 5;
+}
+.rtlb::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-top: 3px solid #3a5a40;
+  border-right: 3px solid #3a5a40;
+  width: 30px;
+  height: 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+.rtlb::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-bottom: 3px solid #3a5a40;
+  border-left: 3px solid #3a5a40;
+  width: 30px;
+  height: 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+.rtlb:hover::after,
+.rtlb:hover::before {
+  width: calc(100% - 3px);
+  height: calc(100% - 3px);
 }
