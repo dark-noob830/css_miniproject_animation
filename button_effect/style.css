@@ -217,8 +217,8 @@ button {
 }
 
 /**************************************/
-.ltrb{
-  grid-column:1 / 3;
+.ltrb {
+  grid-column: 1 / 3;
 }
 .ltrb::before {
   content: "";
@@ -251,8 +251,8 @@ button {
 }
 
 /**************************************/
-.rtlb{
-  grid-column:3 / 5;
+.rtlb {
+  grid-column: 3 / 5;
 }
 .rtlb::before {
   content: "";
@@ -285,7 +285,7 @@ button {
 }
 
 /**************************************/
-.accept{
+.accept {
   background-color: #57cc99;
   color: white;
   border-radius: 5px;
@@ -293,7 +293,7 @@ button {
   overflow: hidden;
 }
 
-.bi-check{
+.accept .bi-check {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -305,19 +305,19 @@ button {
   bottom: -100%;
   transition: all 0.3s ease-in-out;
 }
-.accept:hover .bi-check{
+.accept:hover .bi-check {
   bottom: 0;
 }
-.accept .action{
+.accept .action {
   display: block;
   transition: all 0.3s ease-in-out;
 }
-.accept:hover .action{
+.accept:hover .action {
   transform: translateY(-200%);
 }
 
 /**************************************/
-.delete{
+.delete {
   background-color: #ed476f;
   color: white;
   border-radius: 5px;
@@ -325,7 +325,7 @@ button {
   overflow: hidden;
 }
 
-.bi-x{
+.delete .bi-x {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -337,51 +337,51 @@ button {
   bottom: 100%;
   transition: all 0.3s ease-in-out;
 }
-.delete:hover .bi-x{
+.delete:hover .bi-x {
   bottom: 0;
 }
-.delete .action{
+.delete .action {
   display: block;
   transition: all 0.3s ease-in-out;
 }
-.delete:hover .action{
+.delete:hover .action {
   transform: translateY(200%);
 }
 
 /**************************************/
-.circle-1{
-  grid-column: 1/2 ;
+.circle-1 {
+  grid-column: 1/2;
   overflow: hidden;
 }
-.circle-1::before{
-  content: '';
+.circle-1::before {
+  content: "";
   position: absolute;
   width: 0;
   height: 0;
   background-color: #6a4c93;
   border-radius: 50%;
-  transform: translate(calc(-50% - 20px),calc(-50% - 15px));
-  transition: all .3s ease-in-out;
+  transform: translate(calc(-50% - 20px), calc(-50% - 15px));
+  transition: all 0.3s ease-in-out;
 }
-.circle-1:hover::before{
+.circle-1:hover::before {
   width: 450px;
   height: 450px;
 }
-.circle-1 span{
+.circle-1 span {
   position: relative;
   z-index: 2;
-  transition: color .3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
-.circle-1:hover span{
+.circle-1:hover span {
   color: white;
 }
 
 /**************************************/
-.circle-2{
+.circle-2 {
   overflow: hidden;
 }
-.circle-2::before{
-  content: '';
+.circle-2::before {
+  content: "";
   position: absolute;
   width: 0;
   height: 0;
@@ -389,29 +389,28 @@ button {
   border-radius: 50%;
   right: 0;
   bottom: 0;
-  transform: translate(50%,50%);
-  transition: all .3s ease-in-out;
+  transform: translate(50%, 50%);
+  transition: all 0.3s ease-in-out;
 }
-.circle-2:hover::before{
+.circle-2:hover::before {
   width: 450px;
   height: 450px;
 }
-.circle-2 span{
+.circle-2 span {
   position: relative;
   z-index: 2;
-  transition: color .3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
-.circle-2:hover span{
+.circle-2:hover span {
   color: white;
 }
 
-
 /**************************************/
-.circle-3{
+.circle-3 {
   overflow: hidden;
 }
-.circle-3::before{
-  content: '';
+.circle-3::before {
+  content: "";
   position: absolute;
   width: 0;
   height: 0;
@@ -419,28 +418,28 @@ button {
   border-radius: 50%;
   right: 50%;
   bottom: 0;
-  transform: translate(50%,50%);
-  transition: all .3s ease-in-out;
+  transform: translate(50%, 50%);
+  transition: all 0.3s ease-in-out;
 }
-.circle-3:hover::before{
+.circle-3:hover::before {
   width: 450px;
   height: 450px;
 }
-.circle-3 span{
+.circle-3 span {
   position: relative;
   z-index: 2;
-  transition: color .3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
-.circle-3:hover span{
+.circle-3:hover span {
   color: white;
 }
 
 /**************************************/
-.circle-4{
+.circle-4 {
   overflow: hidden;
 }
-.circle-4::before{
-  content: '';
+.circle-4::before {
+  content: "";
   position: absolute;
   width: 0;
   height: 0;
@@ -448,18 +447,84 @@ button {
   border-radius: 50%;
   right: 50%;
   top: 0;
-  transform: translate(50%,-50%);
-  transition: all .3s ease-in-out;
+  transform: translate(50%, -50%);
+  transition: all 0.3s ease-in-out;
 }
-.circle-4:hover::before{
+.circle-4:hover::before {
   width: 450px;
   height: 450px;
 }
-.circle-4 span{
+.circle-4 span {
   position: relative;
   z-index: 2;
-  transition: color .3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
-.circle-4:hover span{
+.circle-4:hover span {
   color: white;
+}
+
+/* /* ********************************************* */
+.social{
+  grid-column: 2/4;
+  display: flex;
+  gap: 4rem;
+}
+.social button {
+  
+  font-size: 30px;
+  background-color: white;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.bi {
+  position: relative;
+  z-index: 2;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+.btn:hover .bi {
+  color: white;
+  transform: rotate(360deg);
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 100%;
+  transition: top 0.3s ease;
+}
+
+.btn:hover::before {
+  top: 0;
+}
+
+.instagram::before {
+  background: linear-gradient(
+    45deg,
+    #405de6,
+    #5851db,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d
+  );
+}
+
+.telegram::before {
+  background: #0088cc;
+} 
+
+.whatsapp::before {
+  background: #00e676;
+}
+
+.youtube::before {
+  background: #ff0000;
 }
