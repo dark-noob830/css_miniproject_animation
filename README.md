@@ -14,3 +14,5 @@
 - [link_effect](https://github.com/dark-noob830/css_miniproject_animation/tree/main/link_effect)
 
 - [button_effect](https://github.com/dark-noob830/css_miniproject_animation/tree/main/button_effect)
+
+- [image_effect](https://github.com/dark-noob830/css_miniproject_animation/tree/main/image_effect)

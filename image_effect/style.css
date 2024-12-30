@@ -1,0 +1,88 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee;
+    font-family: sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin: 5rem;
+}
+
+.wrapper div {
+    width: 350px;
+    height: 230px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.wrapper img {
+    width: 100%;
+}
+
+/****************************************************/
+.img-1 img {
+    transition: transform 0.5s ease;
+}
+
+.img-1:hover img {
+    transform: scale(1.25);
+}
+
+/****************************************************/
+.img-2 img {
+    transition: width 0.5s ease;
+}
+
+.img-2:hover img {
+    width: 400px;
+}
+
+/****************************************************/
+.img-3 img {
+    transition: all 0.5s ease;
+}
+
+.img-3:hover img {
+    width: 400px;
+    transform: translate(-50px);
+}
+
+
+/****************************************************/
+.img-4 img {
+    transform: scale(1.25);
+    transition: transform 0.5s ease;
+}
+
+.img-4:hover img {
+    transform: scale(1);
+}
+
+/****************************************************/
+.img-5 img {
+    width: 400px;
+    transition: width 0.5s ease;
+}
+
+.img-5:hover img {
+    width: inherit;
+}
+
+/****************************************************/
+.img-6 img {
+    width: 400px;
+    transform: translate(-50px);
+    transition: all 0.5s ease;
+}
+
+.img-6:hover img {
+    width: inherit;
+    transform: translate(0);
+}
