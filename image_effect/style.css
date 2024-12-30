@@ -123,3 +123,78 @@ body {
 .img-10:hover img {
     filter: grayscale(100%);
 }
+
+/****************************************************/
+.img-11{
+  position: relative;
+}
+
+.img-11 span{
+  position: absolute;
+  font-size: 35px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 230px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.img-11:hover span{
+  opacity: 1;
+}
+
+/****************************************************/
+.img-12{
+  position: relative;
+}
+
+.img-12 span{
+  position: absolute;
+  font-size: 35px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 230px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.img-12:hover span{
+  opacity: 1;
+}
+.img-12 img{
+  transition: all 0.5s ease;
+}
+.img-12:hover img{
+  transform: scale(1.2);
+}
+
+/****************************************************/
+.img-13{
+  position: relative;
+}
+
+.img-13 span{
+  position: absolute;
+  font-size: 35px;
+  top: 80%;
+  left: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.img-13:hover span{
+  opacity: 1;
+}
