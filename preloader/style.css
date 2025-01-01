@@ -1,0 +1,142 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #c9c9c9;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  height: 100px;
+  margin: 5rem;
+}
+
+/*******************************************/
+.circular-spinner-1 {
+  width: 60px;
+  height: 60px;
+  border: 8px solid white;
+  border-top: 8px solid #f72585;
+  border-radius: 50%;
+  animation: rotate 1.5s linear infinite;
+}
+
+.circular-spinner-2 {
+  width: 60px;
+  height: 60px;
+  border: 8px solid white;
+  border-top: 8px solid #f72585;
+  border-bottom: 8px solid #f72585;
+  border-radius: 50%;
+  animation: rotate 1.5s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*******************************************/
+.growing-circle-spinner {
+  width: 60px;
+  height: 60px;
+  background-color: #f72585;
+  border-radius: 50%;
+  animation: grow 1s linear infinite;
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/*******************************************/
+.dot-container {
+  display: flex;
+}
+.dot {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: white;
+  margin-left: 10px;
+  animation: pulse 1s linear infinite;
+}
+.dot-1 {
+  animation-delay: 0.2s;
+}
+.dot-2 {
+  animation-delay: 0.4s;
+}
+.dot-3 {
+  animation-delay: 0.5s;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(0.2);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.2);
+  }
+}
+
+/*******************************************/
+.rotaiting-square{
+    width: 60px;
+    height: 60px;
+    position: relative;
+}
+.rotaiting-square::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    border: 4px #386641 solid;
+    animation: rotate-2 2s linear infinite;
+}
+.rotaiting-square::after{
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 30px;
+    height: 30px;
+    border: 4px #6a4c93 solid;
+    animation: rotate-2 2s linear infinite reverse;
+}
+
+@keyframes rotate-2 {
+    0% {
+      transform: rotate(0);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+/*******************************************/
+.step{
+    
+}
