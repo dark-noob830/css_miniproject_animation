@@ -148,20 +148,20 @@ body {
   margin: 5px;
   animation: wave 1s ease-in-out infinite;
 }
-.step-1{
-    animation-delay: 0.2s;
+.step-1 {
+  animation-delay: 0.2s;
 }
-.step-2{
-    animation-delay: 0.4s;
+.step-2 {
+  animation-delay: 0.4s;
 }
-.step-3{
-    animation-delay: 0.6s;
+.step-3 {
+  animation-delay: 0.6s;
 }
-.step-4{
-    animation-delay: 0.8s;
+.step-4 {
+  animation-delay: 0.8s;
 }
-.step-5{
-    animation-delay: 1s;
+.step-5 {
+  animation-delay: 1s;
 }
 @keyframes wave {
   0% {
@@ -187,22 +187,166 @@ body {
 }
 
 /*******************************************/
-.square-to-circle{
-    height: 30px;
-    width: 30px;
-    background-color: #3d405b;
-    border-radius: 50%;
-    animation:  SquareToCircle 1s ease infinite;
+.square-to-circle {
+  height: 30px;
+  width: 30px;
+  background-color: #3d405b;
+  border-radius: 50%;
+  animation: SquareToCircle 1s ease infinite;
 }
 @keyframes SquareToCircle {
-    0%{
-        transform: scale(1) rotate(0);
-    }
-    50%{
-        transform: scale(2) rotate(180deg);
-        border-radius: 5px;
-    }
-    100%{
-        transform: scale(1) rotate(0);
-    }
+  0% {
+    transform: scale(1) rotate(0);
+  }
+  50% {
+    transform: scale(2) rotate(180deg);
+    border-radius: 5px;
+  }
+  100% {
+    transform: scale(1) rotate(0);
+  }
+}
+/*******************************************/
+.colorful {
+  width: 60px;
+  height: 60px;
+  position: relative;
+}
+
+.square-1 {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background-color: #3d405b;
+  top: 0;
+  left: 0;
+  animation: animate-1 2.5s ease infinite;
+}
+
+.square-2 {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background-color: #3d405b;
+  top: 0;
+  right: 0;
+  animation: animate-2 2.5s ease infinite;
+}
+
+.square-3 {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background-color: #3d405b;
+  bottom: 0;
+  left: 0;
+  animation: animate-3 2.5s ease infinite;
+}
+
+.square-4 {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background-color: #3d405b;
+  bottom: 0;
+  right: 0;
+  animation: animate-4 2.5s ease infinite;
+}
+
+@keyframes animate-1 {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-20px, -20px);
+    border-radius: 50%;
+    background-color: #f72585;
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes animate-2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(20px, -20px);
+    border-radius: 50%;
+    background-color: #f4a259;
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes animate-3 {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-20px, 20px);
+    border-radius: 50%;
+    background-color: #6a4c93;
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes animate-4 {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(20px, 20px);
+    border-radius: 50%;
+    background-color: aqua;
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+/*******************************************/
+.clock {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 3px solid white;
+  position: relative;
+}
+
+.clock::before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 15px;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform-origin: 50% 0;
+  animation: clock 2s linear infinite;
+}
+
+.clock::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 25px;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform-origin: 50% 0;
+  animation: clock 1s linear infinite;
+}
+
+@keyframes clock {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
